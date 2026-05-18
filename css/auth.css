@@ -1,0 +1,98 @@
+/* ============================================================
+   AUTH PAGES — Login & Signup  |  Matches Figma Image 4
+   ============================================================ */
+html,body{margin:0;padding:0;height:100%;font-family:'Segoe UI',Arial,sans-serif;}
+
+.auth-page{
+  min-height:100vh;display:flex;align-items:stretch;
+  background:#5A0A0A;position:relative;overflow:hidden;
+}
+.auth-bg{
+  position:absolute;inset:0;
+  background-image:url('../img/auth-bg.jpg');
+  background-size:cover;background-position:center;
+  opacity:0.45;z-index:0;
+}
+.auth-left{
+  flex:1;display:flex;flex-direction:column;justify-content:center;
+  padding:48px 48px 48px 56px;position:relative;z-index:1;color:#fff;
+}
+.auth-brand{font-size:2rem;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;}
+.auth-tagline{font-size:1.5rem;font-weight:800;text-transform:uppercase;line-height:1.2;margin-bottom:24px;max-width:380px;}
+.auth-desc{font-size:0.88rem;line-height:1.7;color:rgba(255,255,255,0.85);max-width:360px;}
+.auth-right{
+  display:flex;align-items:center;justify-content:center;
+  padding:40px 48px;position:relative;z-index:1;min-width:340px;
+}
+.auth-card{
+  background:#fff;border-radius:12px;padding:36px;
+  width:320px;box-shadow:0 8px 40px rgba(0,0,0,0.28);
+}
+.auth-card h1{
+  font-size:1.1rem;font-weight:800;text-transform:uppercase;
+  letter-spacing:2px;text-align:center;margin-bottom:24px;color:#1A1A1A;
+}
+.auth-field{margin-bottom:16px;}
+.auth-field label{
+  display:block;font-size:0.75rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:0.5px;color:#1A1A1A;margin-bottom:6px;
+}
+.auth-field input{
+  width:100%;padding:11px 14px;border:1px solid #DDD;border-radius:6px;
+  background:#F5F5F5;font-size:0.9rem;outline:none;color:#1A1A1A;
+  transition:border-color 0.2s,background 0.2s;
+}
+.auth-field input:focus{border-color:#7B1818;background:#fff;}
+.auth-submit{
+  width:100%;padding:13px;background:#F5C400;color:#1A1A1A;
+  font-weight:800;font-size:0.9rem;text-transform:uppercase;letter-spacing:2px;
+  border:none;border-radius:30px;cursor:pointer;margin-top:20px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.12);transition:background 0.2s;
+}
+.auth-submit:hover{background:#D4A800;}
+.auth-helper{text-align:center;font-size:0.8rem;color:#666;margin-top:16px;}
+.auth-helper a{color:#7B1818;font-weight:700;}
+.notice{padding:10px 14px;border-radius:6px;font-size:0.85rem;margin-bottom:14px;}
+.notice.error{background:#fde8e8;color:#9b1c1c;border-left:3px solid #ef4444;}
+.notice.success{background:#e8f5e9;color:#1b5e20;border-left:3px solid #4caf50;}
+@media(max-width:720px){
+  .auth-page{flex-direction:column;}
+  .auth-left{padding:32px 24px;}
+  .auth-right{padding:24px;min-width:auto;}
+  .auth-card{width:100%;}
+}
+
+/* CIT Logo in auth pages */
+.auth-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.auth-brand-row .auth-brand {
+  margin-bottom: 0;
+}
+.auth-brand-x {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.7);
+}
+.auth-cit-logo {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+  border: 2px solid rgba(255,255,255,0.4);
+}
+.auth-card-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.auth-card-logo img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}

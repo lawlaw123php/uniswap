@@ -1,0 +1,41 @@
+/* Admin pages — uses uniswap.css base, these are admin-specific overrides */
+body { background: #F0F0F0; }
+.layout { display: flex; min-height: 100vh; }
+.sidebar {
+    width: 210px; flex-shrink: 0;
+    background: var(--maroon, #7B1818);
+    padding: 24px 0;
+}
+.sidebar .brand {
+    color: #fff; font-weight: 900; font-size: 1.1rem;
+    padding: 0 20px 4px; letter-spacing: 1px; text-transform: uppercase;
+}
+.sidebar .subtitle {
+    color: rgba(255,255,255,0.55); font-size: 0.72rem;
+    padding: 0 20px 20px; text-transform: uppercase; letter-spacing: 1px;
+}
+.sidebar .nav-link {
+    display: block; padding: 11px 20px;
+    color: rgba(255,255,255,0.8); font-size: 0.82rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none;
+    transition: background 0.15s;
+}
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    background: rgba(255,255,255,0.15); color: #fff;
+}
+.main { flex: 1; padding: 28px; overflow-x: auto; }
+.topbar { margin-bottom: 20px; }
+.topbar h1 { font-size: 1.1rem; font-weight: 800; color: #7B1818; text-transform: uppercase; letter-spacing: 1px; }
+.grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 16px;
+}
+.card {
+    background: #fff; border-radius: 8px; padding: 20px;
+    border: 1px solid #E0E0E0; text-decoration: none; color: #1A1A1A;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: block;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.10); }
+.card h3 { color: #7B1818; font-size: 0.95rem; margin-bottom: 6px; font-weight: 800; text-transform: uppercase; }
+.card p { color: #666; font-size: 0.83rem; margin: 0; }
